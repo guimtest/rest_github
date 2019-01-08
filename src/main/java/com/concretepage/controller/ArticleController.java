@@ -29,6 +29,13 @@ public class ArticleController {
 		Article article = articleService.getArticleById(id);
 		return new ResponseEntity<Article>(article, HttpStatus.OK);
 	}
+	
+	@GetMapping("article/{numero}")
+	public ResponseEntity<Article> getArticleByNumero(@PathVariable("numero") Integer numero) {
+		Article article = articleService.getArticleById(numero);
+		return new ResponseEntity<Article>(article, HttpStatus.OK);
+	}
+	
 	@PutMapping("article")
 	public ResponseEntity<Article> updateArticle(@RequestBody Article article) {
 		articleService.updateArticle(article);
