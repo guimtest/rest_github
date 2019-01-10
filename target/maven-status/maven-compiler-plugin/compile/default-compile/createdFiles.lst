@@ -1,5 +1,9 @@
-com\concretepage\config\SwaggerConfig.class
+com\concretepage\service\StoreService.class
+com\concretepage\service\IStoreService.class
 com\concretepage\controller\ArticleController.class
+com\concretepage\domain\Store.class
+com\concretepage\service\ArticleService.class
+com\concretepage\config\SwaggerConfig.class
+com\concretepage\controller\MagasinController.class
 com\concretepage\service\IArticleService.class
 com\concretepage\domain\Article.class
-com\concretepage\service\ArticleService.class

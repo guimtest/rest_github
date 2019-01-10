@@ -19,6 +19,7 @@ public class ArticleService implements IArticleService {
 	public Article getArticleById(int articleId) {
 		Predicate<Article> articlePredicate = a-> a.getArticleId() == articleId;
 		Article obj = list.stream().filter(articlePredicate).findFirst().get();
+		System.out.println(obj);
 		return obj;
 	}	
 	@Override
