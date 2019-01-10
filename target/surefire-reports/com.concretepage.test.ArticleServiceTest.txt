@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.concretepage.test.ArticleServiceTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.823 sec - in com.concretepage.test.ArticleServiceTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.722 sec - in com.concretepage.test.ArticleServiceTest

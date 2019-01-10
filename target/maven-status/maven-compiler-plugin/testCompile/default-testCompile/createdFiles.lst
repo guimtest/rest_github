@@ -1,2 +1,4 @@
+com\concretepage\test\MagasinControllerTest.class
 com\concretepage\test\ArticleServiceTest$ArticleServiceImplTestContextConfiguration.class
 com\concretepage\test\ArticleServiceTest.class
+com\concretepage\test\MagasinControllerTest$MagasinControllerImplTestContextConfiguration.class
