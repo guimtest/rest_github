@@ -2,6 +2,7 @@ package com.concretepage.test;
 
 import static org.junit.Assert.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.junit.Test;
@@ -33,6 +34,18 @@ public class MagasinControllerTest {
 	public void testAllStores() {
 		List<Store> listStore = storeService.getAllStores();
 		assertTrue(listStore != null && listStore.size() > 0);
+	}
+	
+	@Test
+	public void testAllStores_NullList() {
+		List<Store> listStore = null;
+		assertFalse(listStore != null);
+	}
+	
+	@Test
+	public void testAllStores_EmptyList() {
+		List<Store> listStore = new ArrayList<Store>();
+		assertTrue(listStore != null && listStore.size() == 0);
 	}
 
 }
