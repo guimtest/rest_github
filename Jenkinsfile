@@ -11,7 +11,7 @@ pipeline{
 					$class: 'GitScm',
 					branches: [[name:"master"]],
 					userRemoteConfigs: [[url : 'https://github.com/guimtest/rest_github.git', 
-						credentialsId: 'jenkins']]
+						credentialsId: 'guimtest']]
 				])
 			}
 		}
