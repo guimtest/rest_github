@@ -22,11 +22,11 @@ pipeline{
 				sh "mvn clean install"
 			}
 		}
-		/*stage('deploy projet'){
+		stage('deploy projet'){
 			steps{
-				try to call another job
+				build job: 'deploiement_test'
 			}
-		}*/
+		}
 	}
 
 }
