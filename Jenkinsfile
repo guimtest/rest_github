@@ -18,7 +18,7 @@ pipeline{
 		stage('build project'){
 			steps{
 				withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'jenkins']]){
-					"sh mvn clean install"
+					sh "mvn clean install"
 				}
 			}
 		}
