@@ -1,8 +1,9 @@
 pipeline{
 	agent any
-	/*triggers{
-		cron et git push event
-	}*/
+	triggers{
+		/*cron et git push event*/
+		githubPush()
+	}
 
 	stages{
 		stage('Checkout git'){
