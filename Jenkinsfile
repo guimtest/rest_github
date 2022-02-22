@@ -24,7 +24,7 @@ pipeline{
 		}
 		/*stage('deploy projet'){
 			steps{
-				/*try to call another job*/
+				try to call another job
 			}
 		}*/
 	}
