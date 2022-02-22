@@ -1,5 +1,5 @@
 pipeline{
-
+	agent {label 'agent-build-1.3.x' }
 	/*triggers{
 		cron et git push event
 	}*/
