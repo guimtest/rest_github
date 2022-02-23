@@ -1,6 +1,7 @@
+def CUSTOM_APPTEAM_USER = "foo_user"
+def CUSTOM_APPTEAM_PASS = "foo_pass"
+
 pipeline{
-	def CUSTOM_APPTEAM_USER = "foo_user"
-	def CUSTOM_APPTEAM_PASS = "foo_pass"
 	agent any
 	triggers{
 		/*cron et git push event*/
