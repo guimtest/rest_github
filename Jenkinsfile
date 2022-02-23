@@ -1,4 +1,6 @@
 pipeline{
+	def CUSTOM_APPTEAM_USER = "foo_user"
+	def CUSTOM_APPTEAM_PASS = "foo_pass"
 	agent any
 	triggers{
 		/*cron et git push event*/
@@ -24,7 +26,11 @@ pipeline{
 		}
 		stage('deploy projet'){
 			steps{
-				build job: 'deploiement_test'
+				withCredentials([
+				    usernamePassword(credentialsId: 'custom_credentials_app', passwordVariable: 'CUSTOM_APPTEAM_PASS', usernameVariable: 'CUSTOM_APPTEAM_USER')
+				]) {
+					build job: 'deploiement_test', parameters: [[$class: 'StringParameterValue', name: 'environnement', value: 'R5NA']]
+				 }
 			}
 		}
 	}
